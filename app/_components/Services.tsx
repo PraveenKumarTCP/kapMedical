@@ -73,15 +73,15 @@ export default function Services() {
                     >
                         {services.map((service, index) => (
                             <SwiperSlide key={index}>
-                                <div className="group relative overflow-hidden rounded-xl h-[450px] md:h-[550px] border border-white/10 hover:border-white/30 transition-all bg-black/20">
+                                <div className="group relative overflow-hidden rounded-xl h-[450px] md:h-[550px] border border-white/10 hover:border-white/30 transition-all ">
                                     <Image
                                         src={service.image}
                                         alt={service.title}
                                         fill
-                                        className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-100"
                                         unoptimized
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent flex flex-col justify-end p-8 md:p-10">
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-black/10 to-transparent flex flex-col justify-end p-8 md:p-10">
                                         <h3 className="text-xl md:text-2xl font-bold mb-4 text-white!">{service.title}</h3>
                                         <p className="text-gray-300 text-sm md:text-base leading-relaxed line-clamp-3 text-white!">
                                             {service.description}

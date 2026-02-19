@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section className="relative bg-black text-white h-[100vh] items-center justify-center flex overflow-hidden">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="max-w-2xl">
+                <div className="max-w-2xl" data-aos="fade-right">
                     <div className="bg-[#002B4966] backdrop-blur-sm p-8 rounded-lg border-l-4 border-[#D32F2F] max-w-xl">
                         <h1 className="text-3xl! md:text-4xl! font-bold mb-4 leading-tight text-white!">
                             Precision In Every Procedure
@@ -24,12 +24,20 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            {/* Background Image Placeholder or Gradient */}
-            <div className="absolute inset-0 z-0 bg-gradient-to-r from-black via-black/80 to-transparent">
-                {/* In a real scenario, an image distinct from the content would go here */}
-                <video src="https://cdn.clinicalvisuals.com/siteImages/generic/landing_page_generic_1.mp4" autoPlay loop muted ></video>
-
+            {/* Background Video */}
+            <div className="absolute inset-0 z-0">
+                <video
+                    className="w-full h-full object-cover opacity-60"
+                    src="https://cdn.clinicalvisuals.com/siteImages/generic/landing_page_generic_1.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
+                {/* Gradient Overlay for Text Readability */}
+                {/* <div className="absolute inset-0 bg-gradient-to-r from-[#002B49] via-[#002B49]/70 to-transparent"></div> */}
             </div>
         </section>
+
     );
 }
