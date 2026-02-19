@@ -7,7 +7,7 @@ export default function AboutQualityProducts() {
         <section className=" overflow-hidden bg-gray-50">
             <div className="px-4 lg:px-0! sm:px-6 lg:px-8">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
-                    <div className="lg:w-1/2 relative h-[400px] md:h-[600px] w-full overflow-hidden">
+                    <div className="lg:w-1/2 relative h-[400px] md:h-[700px] w-full overflow-hidden" data-aos="fade-right" data-aos-delay="100">
                         <Image
                             src="/images/about/kap-medical.jpg"
                             alt="Quality Products"
@@ -16,8 +16,8 @@ export default function AboutQualityProducts() {
                             unoptimized
                         />
                     </div>
-                    <div className="lg:w-1/2 lg:px-2">
-                        <h2 className="text-3xl md:text-4xl font-bold text-[#002B49]! mb-10! leading-tight">
+                    <div className="lg:w-1/2 lg:px-2" data-aos="fade-up" data-aos-delay="100">
+                        <h2 className="text-3xl md:text-3xl! font-bold text-[#002B49]! mb-10! leading-tight">
                             KAP Medical provides high quality products
                         </h2>
 

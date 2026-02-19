@@ -1,6 +1,6 @@
-
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function About() {
     return (
@@ -10,7 +10,7 @@ export default function About() {
                     {/* Left Content Side */}
                     <div className="lg:w-1/2 max-w-xl" data-aos="fade-up">
                         <h2 className="text-[#002B49] text-3xl font-bold mb-6 tracking-tight">About KAP medical</h2>
-                        <div className="space-y-6 text-gray-700 text-[15px] leading-relaxed">
+                        <div className="space-y-6 text-gray-700 text-[15px] leading-relaxed text-justify!">
                             <p>
                                 Founded in 1999, <span className="text-[#D32F2F] font-semibold">KAP Medical</span> is a California-based designer and manufacturer of
                                 state-of-the-art Therapeutic Support Surfaces and advanced medical electronic
@@ -32,9 +32,9 @@ export default function About() {
                         {/* Divider */}
                         <div className="h-px bg-gray-100 w-full my-8"></div>
 
-                        <button className="bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-8 py-3 rounded text-sm font-bold transition-all shadow-sm hover:shadow-md">
+                        <Link href="/about" className="inline-block bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-8 py-3 rounded text-sm font-bold transition-all shadow-sm hover:shadow-md">
                             Learn More about KAP
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Right Image Side */}

@@ -24,9 +24,9 @@ export default function ServiceHero() {
                                 KAP Medical delivers comprehensive engineering and manufacturing services focused on therapeutic support surfaces and advanced medical electronics. From concept development to U.S.-based production, we provide integrated solutions built on precision, compliance, and uncompromising quality.
                             </p>
                         </div>
-                        <button className="mt-8 bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-8 rounded transition-all">
+                        <Link href="/contact" className="inline-block mt-8 bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-8 rounded transition-all">
                             Get in touch
-                        </button>
+                        </Link>
                     </div>
                     <div className="lg:w-1/2 relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
                         {/* Using a subtle medical abstract image for service hero */}

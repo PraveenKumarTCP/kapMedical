@@ -33,7 +33,7 @@ export default function AboutTeam() {
                             image: '/images/about/team-3.jpg'
                         }
                     ].map((member, index) => (
-                        <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col items-center text-center">
+                        <div key={index} className="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col items-center text-center" data-aos="fade-up" data-aos-delay={index * 100}>
                             <div className="relative h-80 w-full">
                                 <Image
                                     src={member.image}

@@ -24,9 +24,9 @@ export default function ProductHero() {
                                 KAP Medical products are engineered to deliver advanced therapeutic support and reliable medical electronic performance across diverse healthcare settings. Designed and manufactured in the USA, our solutions prioritize patient safety, comfort, and long-term durability.
                             </p>
                         </div>
-                        <button className="mt-8 bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-8 rounded transition-all">
+                        <Link href="/contact" className="inline-block mt-8 bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-8 rounded transition-all">
                             Get in touch
-                        </button>
+                        </Link>
                     </div>
                     <div className="lg:w-1/2 relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl">
                         <Image

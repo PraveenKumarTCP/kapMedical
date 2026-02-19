@@ -1,5 +1,4 @@
-
-import React from 'react';
+import Link from 'next/link';
 
 interface ProductInfoProps {
     name: string;
@@ -28,12 +27,12 @@ export default function ProductInfo({ name, shortDescription, features }: Produc
             </ul>
 
             <div className="flex flex-wrap gap-4 mt-4">
-                <button className="bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-8 py-3 rounded font-bold text-sm transition-all shadow-md">
+                <Link href="/contact" className="inline-block bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-8 py-3 rounded font-bold text-sm transition-all shadow-md">
                     Request a Demo
-                </button>
-                <button className="bg-gray-100 hover:bg-gray-200 text-[#002B49] px-8 py-3 rounded font-bold text-sm transition-all">
+                </Link>
+                <Link href="/contact" className="inline-block bg-gray-100 hover:bg-gray-200 text-[#002B49] px-8 py-3 rounded font-bold text-sm transition-all">
                     Brochure
-                </button>
+                </Link>
             </div>
         </div>
     );

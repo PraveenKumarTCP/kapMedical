@@ -4,7 +4,7 @@ import { Target, Eye, Heart } from 'lucide-react';
 export default function AboutPurpose() {
     return (
         <section className="py-30">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-delay="100">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl font-bold text-[#002B49]! mb-4">Our Purpose & Principles</h2>
                     <p className="max-w-3xl mx-auto text-gray-600 text-sm md:text-base leading-relaxed">

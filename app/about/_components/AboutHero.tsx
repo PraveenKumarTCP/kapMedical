@@ -15,7 +15,7 @@ export default function AboutHero() {
                 </nav>
 
                 <div className="flex flex-col lg:flex-row items-center gap-12">
-                    <div className="lg:w-1/2">
+                    <div className="lg:w-1/2" data-aos="fade-right" data-aos-delay="100">
                         <h1 className="text-4xl md:text-5xl font-bold text-[#002B49] mb-6">
                             About KAP medical
                         </h1>
@@ -27,11 +27,11 @@ export default function AboutHero() {
                                 We engineer dependable solutions healthcare professionals trust. Designed and built in the USA, our work reflects uncompromising quality and responsive support.
                             </p>
                         </div>
-                        <button className="mt-8 bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-8 rounded transition-all">
+                        <Link href="/contact" className="inline-block mt-8 bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-8 rounded transition-all">
                             Get in touch
-                        </button>
+                        </Link>
                     </div>
-                    <div className="lg:w-1/2 relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-lg">
+                    <div className="lg:w-1/2 relative h-[400px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-lg" data-aos="fade-left" data-aos-delay="100">
                         <Image
                             src="/images/about/abt-kap.jpg"
                             alt="About KAP Medical"

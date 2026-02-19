@@ -1,4 +1,4 @@
-import React from 'react';
+import Link from 'next/link';
 
 export default function ServiceCTA() {
     return (
@@ -7,9 +7,9 @@ export default function ServiceCTA() {
                 <h2 className="text-3xl md:text-4xl! font-semibold! mb-8! text-white!">
                     Have a Project in Mind? Let's<br />Engineer the Right Solution
                 </h2>
-                <button className="bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-10 rounded transition-all shadow-lg">
+                <Link href="/contact" className="inline-block bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-10 rounded transition-all shadow-lg">
                     Get in touch
-                </button>
+                </Link>
             </div>
         </section>
     );

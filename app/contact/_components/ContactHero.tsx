@@ -24,6 +24,11 @@ export default function ContactHero() {
                                 We’re here to support your engineering, manufacturing, and product development needs. Contact KAP Medical to connect with our team and discover how we can bring your solution to life.
                             </p>
                         </div>
+                        <div>
+                            <Link href="/about" className="inline-block bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-6 py-2 rounded text-sm font-medium transition-colors">
+                                About Us
+                            </Link>
+                        </div>
                     </div>
                     <div className="lg:w-1/2 relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl">
                         <Image

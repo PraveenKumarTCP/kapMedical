@@ -27,12 +27,12 @@ export default function Features() {
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {features.map((feature, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-start border-t-2 border-transparent hover:border-[#D32F2F] transition-all duration-300">
+                        <div key={index} className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-start border-t-2 border-transparent hover:border-[#D32F2F] transition-all duration-300" data-aos="fade-up">
                             <div className="bg-[#D32F2F] p-3 rounded-full mb-4">
                                 {feature.icon}
                             </div>
                             <h3 className="text-[#002B49]! font-bold text-lg! md:text-xl! mb-2">{feature.title}</h3>
-                            <p className="text-gray-600 text-sm leading-relaxed">
+                            <p className="text-gray-600 text-sm leading-relaxed text-justify">
                                 {feature.description}
                             </p>
                         </div>
