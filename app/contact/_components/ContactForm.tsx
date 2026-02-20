@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Button from '../../_components/Button';
 
 export default function ContactForm() {
     const [formData, setFormData] = useState({
@@ -139,16 +140,14 @@ export default function ContactForm() {
                         {errors.message && <p className="text-red-500 text-xs mt-1 ml-1">{errors.message}</p>}
                     </div>
                     <div className="text-center pt-4">
-                        <button
+                        <Button
                             type="submit"
                             disabled={!isFormValid}
-                            className={`font-bold py-4 px-12 rounded transition-all shadow-lg w-full md:w-auto ${isFormValid
-                                ? 'bg-[#BF0D3E] hover:bg-[#a00b34] text-white cursor-pointer'
-                                : 'bg-gray-300 text-gray-500 cursor-not-allowed shadow-none'
-                                }`}
+                            variant="secondary"
+                            className="w-full md:w-auto py-4 px-12"
                         >
                             Get in touch
-                        </button>
+                        </Button>
                     </div>
                 </form>
             </div>

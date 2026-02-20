@@ -1,7 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+import { ChevronsRight } from 'lucide-react';
+import Button from '../../_components/Button';
 
 export default function ServiceHero() {
     return (
@@ -10,7 +11,7 @@ export default function ServiceHero() {
                 {/* Breadcrumbs */}
                 <nav className="flex items-center gap-2 text-sm mb-8 text-gray-500">
                     <Link href="/" className="hover:text-[#D32F2F]">Home</Link>
-                    <ChevronRight size={14} />
+                    <ChevronsRight size={14} />
                     <span className="text-[#D32F2F]">Services</span>
                 </nav>
 
@@ -24,9 +25,9 @@ export default function ServiceHero() {
                                 KAP Medical delivers comprehensive engineering and manufacturing services focused on therapeutic support surfaces and advanced medical electronics. From concept development to U.S.-based production, we provide integrated solutions built on precision, compliance, and uncompromising quality.
                             </p>
                         </div>
-                        <Link href="/contact" className="inline-block mt-8 bg-[#BF0D3E] hover:bg-[#a00b34] text-white font-bold py-3 px-8 rounded transition-all">
+                        <Button href="/contact" variant="secondary" className="mt-8">
                             Get in touch
-                        </Link>
+                        </Button>
                     </div>
                     <div className="lg:w-1/2 relative h-[300px] md:h-[400px] w-full rounded-2xl overflow-hidden shadow-2xl bg-gray-100">
                         {/* Using a subtle medical abstract image for service hero */}

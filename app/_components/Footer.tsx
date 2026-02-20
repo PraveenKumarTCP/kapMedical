@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Facebook, Linkedin, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import Button from './Button';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -36,9 +37,9 @@ export default function Footer() {
                                 placeholder="Enter your email address"
                                 className="bg-gray-100 text-sm! px-3! py-2! rounded-l w-full focus:outline-none focus:ring-1 focus:ring-[#D32F2F]"
                             />
-                            <button className="bg-[#D32F2F] text-white text-sm! font-bold px-4! py-2! rounded-r hover:bg-[#b01e1e]">
+                            <Button variant="danger" className="rounded-l-none">
                                 Subscribe
-                            </button>
+                            </Button>
                         </div>
                     </div>
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from './Button';
 
 export default function Products() {
     const products = [
@@ -36,29 +37,33 @@ export default function Products() {
                         <Link
                             key={index}
                             href={`/products/${product.id}`}
-                            className="flex flex-col items-center bg-white rounded-xl shadow-sm hover:shadow-md border border-gray-100 p-6 transition-all group"
+                            className="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 border border-gray-100 flex flex-col group"
                             data-aos="fade-up"
                             data-aos-delay={index * 100}
                         >
-                            <div className="relative w-full aspect-square mb-6 bg-[#D8D8D8] rounded-lg overflow-hidden flex items-center justify-center">
+                            <div className="relative aspect-[450/550] w-full bg-[#D8D8D8] flex items-center justify-center p-6 sm:p-8">
                                 <Image
                                     src={product.image}
                                     alt={product.name}
-                                    width={200}
-                                    height={200}
-                                    className="object-contain group-hover:scale-105 transition-transform"
+                                    width={300}
+                                    height={250}
+                                    className="object-contain group-hover:scale-105 transition-transform duration-500"
                                     unoptimized
                                 />
                             </div>
-                            <h3 className="text-[#002B49]! font-bold text-md md:text-lg! tracking-wide uppercase">{product.name}</h3>
+                            <div className="p-6 border-t border-gray-50 text-center flex-grow flex items-center justify-center">
+                                <h3 className="text-[#002B49]! font-bold text-sm! sm:text-base! md:text-lg! tracking-wide uppercase">
+                                    {product.name}
+                                </h3>
+                            </div>
                         </Link>
                     ))}
                 </div>
 
                 <div className="mt-12">
-                    <Link href="/products" className="inline-block bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-8 py-2.5 rounded text-sm font-medium transition-colors">
+                    <Button href="/products" variant="danger">
                         View All Products
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Button from '../../_components/Button';
 
 interface ProductInfoProps {
     name: string;
@@ -27,12 +27,12 @@ export default function ProductInfo({ name, shortDescription, features }: Produc
             </ul>
 
             <div className="flex flex-wrap gap-4 mt-4">
-                <Link href="/contact" className="inline-block bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-8 py-3 rounded font-bold text-sm transition-all shadow-md">
+                <Button href="/contact" variant="danger">
                     Request a Demo
-                </Link>
-                <Link href="/contact" className="inline-block bg-gray-100 hover:bg-gray-200 text-[#002B49] px-8 py-3 rounded font-bold text-sm transition-all">
+                </Button>
+                <Button href="/contact" variant="outline">
                     Brochure
-                </Link>
+                </Button>
             </div>
         </div>
     );

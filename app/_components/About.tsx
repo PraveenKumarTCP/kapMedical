@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import Button from './Button';
 
 export default function About() {
     return (
@@ -32,9 +32,9 @@ export default function About() {
                         {/* Divider */}
                         <div className="h-px bg-gray-100 w-full my-8"></div>
 
-                        <Link href="/about" className="inline-block bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-8 py-3 rounded text-sm font-bold transition-all shadow-sm hover:shadow-md">
+                        <Button href="/about" variant="danger" size="lg">
                             Learn More about KAP
-                        </Link>
+                        </Button>
                     </div>
 
                     {/* Right Image Side */}

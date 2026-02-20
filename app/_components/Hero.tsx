@@ -1,11 +1,24 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
+"use client";
+import React, { useState, useEffect } from 'react';
+import Button from './Button';
 
 export default function Hero() {
+    const bannerVideos = [
+        "https://cdn.clinicalvisuals.com/siteImages/kap/bytec_01.webm",
+        "https://cdn.clinicalvisuals.com/siteImages/kap/bytec_02.webm",
+        "https://cdn.clinicalvisuals.com/siteImages/kap/bytec_03.webm",
+    ];
+
+    const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
+    const handleVideoEnd = () => {
+        setCurrentVideoIndex((prevIndex) => (prevIndex + 1) % bannerVideos.length);
+    };
+
+
     return (
         <section className="relative bg-black text-white h-[100vh] items-center justify-center flex overflow-hidden">
-            <div className="container ml-0 mr-auto px-4 sm:px-6 lg:px-8 2xl:pl-32 relative z-10">
+            <div className="container ml-0 mr-auto px-4 sm:px-6 lg:px-8 2xl:pl-32 relative z-10 w-full">
                 <div className="max-w-2xl" data-aos="fade-right">
                     <div className="bg-[#002B4966] backdrop-blur-sm p-8 rounded-lg border-l-4 border-[#D32F2F] max-w-xl">
                         <h1 className="text-3xl! md:text-4xl! font-bold mb-4 leading-tight text-white!">
@@ -18,26 +31,25 @@ export default function Hero() {
                             designed to enhance clinical outcomes, streamline surgical
                             workflows, and support excellence in every operating room.
                         </p>
-                        <Link href="/products" className="inline-block bg-[#D32F2F] hover:bg-[#b01e1e] text-white px-6 py-2 rounded text-sm font-medium transition-colors">
+                        <Button href="/products" variant="danger">
                             Explore Our Products
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </div>
-            {/* Background Video */}
+
+            {/* Background Video Layer */}
             <div className="absolute inset-0 z-0">
                 <video
-                    className="w-full h-full object-cover opacity-60"
-                    src="https://cdn.clinicalvisuals.com/siteImages/generic/landing_page_generic_1.mp4"
+                    key={currentVideoIndex}
+                    src={bannerVideos[currentVideoIndex]}
                     autoPlay
-                    loop
                     muted
                     playsInline
-                />
-                {/* Gradient Overlay for Text Readability */}
-                {/* <div className="absolute inset-0 bg-gradient-to-r from-[#002B49] via-[#002B49]/70 to-transparent"></div> */}
+                    onEnded={handleVideoEnd}
+                    className="absolute inset-0 w-full h-full object-cover z-0"
+                ></video>
             </div>
         </section>
-
     );
 }

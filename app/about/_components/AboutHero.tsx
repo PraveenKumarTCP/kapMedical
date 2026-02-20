@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight } from 'lucide-react';
+import { ChevronsRight } from 'lucide-react';
 
 export default function AboutHero() {
     return (
@@ -10,7 +10,7 @@ export default function AboutHero() {
                 {/* Breadcrumbs */}
                 <nav className="flex items-center gap-2 text-sm mb-8 text-gray-500">
                     <Link href="/" className="hover:text-[#D32F2F]">Home</Link>
-                    <ChevronRight size={14} />
+                    <ChevronsRight size={14} />
                     <span className="text-[#D32F2F]">About</span>
                 </nav>
 
