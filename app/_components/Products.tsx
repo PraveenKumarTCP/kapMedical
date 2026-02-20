@@ -11,13 +11,43 @@ export default function Products() {
             image: "/images/product-1.png",
         },
         {
-            id: "iturn-clrt-system",
-            name: "ITURN CLRT System",
+            id: "k-0-elite-control-unit",
+            name: "K-0 Elite Control Unit",
+            image: "/images/product-2.png",
+        },
+        {
+            id: "k-11-foam-mattress-replacement",
+            name: "K-11 FOAM MATTRESS REPLACEMENT",
+            image: "/images/product-3.png",
+        },
+        {
+            id: "smartturn",
+            name: "SMARTURN",
+            image: "/images/product-1.png",
+        },
+        {
+            id: "intellimatt",
+            name: "INTELLIMATT",
+            image: "/images/product-1.png",
+        },
+        {
+            id: "zmatt",
+            name: "ZMATT",
+            image: "/images/product-1.png",
+        },
+        {
+            id: "dx-z-turn",
+            name: "DX & Z-TURN",
             image: "/images/product-1.png",
         },
         {
             id: "smartmatt",
-            name: "SMARTMATT & SMARTTURN",
+            name: "SMARTMATT",
+            image: "/images/product-1.png",
+        },
+        {
+            id: "iturn-clrt-system",
+            name: "ITURN CLRT System",
             image: "/images/product-1.png",
         },
     ];
