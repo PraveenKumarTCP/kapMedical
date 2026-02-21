@@ -63,7 +63,7 @@ export default function Products() {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {products.slice(0, 3)map((product, index) => (
+                    {products.slice(0, 3).map((product, index) => (
                         <Link
                             key={index}
                             href={`/products/${product.id}`}
