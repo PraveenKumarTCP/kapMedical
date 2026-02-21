@@ -4,9 +4,10 @@ import Button from './Button';
 
 export default function Hero() {
     const bannerVideos = [
-        "https://cdn.clinicalvisuals.com/siteImages/kap/bytec_01.webm",
-        "https://cdn.clinicalvisuals.com/siteImages/kap/bytec_02.webm",
-        "https://cdn.clinicalvisuals.com/siteImages/kap/bytec_03.webm",
+        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/001.webm",
+        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/002.webm",
+        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/003.webm",
+        "https://cdn.clinicalvisuals.com/medical/kap/landingpage/004.webm",
     ];
 
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
