@@ -3,14 +3,9 @@ import Image from 'next/image';
 
 export default function GalleryGrid() {
     const images = [
-        "images/gallery/our-gallery.jpg",
-        "https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1584432810601-6c7f27d2362b?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80",
-        "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80",
+        "images/gallery/gallery-1.png",
+        "images/gallery/gallery-2.png",
+        "images/gallery/gallery-3.png",
     ];
 
     return (
